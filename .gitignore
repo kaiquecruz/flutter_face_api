@@ -1,9 +1,0 @@
-.DS_Store
-test/json
-
-.dart_tool/
-
-.packages
-.pub/
-
-build/
