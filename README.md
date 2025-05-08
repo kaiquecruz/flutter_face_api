@@ -5,7 +5,7 @@
 
 Face SDK is a framework that is used for face matching, recognition and liveness detection.
 
-## Documentation
+## Documentation 
 
 You can find documentation [here](https://docs.regulaforensics.com/develop/face-sdk/mobile/).
 
