@@ -80,7 +80,7 @@
         @"locationTrackingEnabled":@(input.locationTrackingEnabled),
         @"recordingProcess":@(input.recordingProcess),
         @"livenessType":@(input.livenessType),
-        @"screenOrientation":@(input.screenOrientation),
+        @"screenOrientation":[RFSWJSONConstructor generateScreenOrienration:input.screenOrientation],
         @"skipStep":[RFSWJSONConstructor generateLivenessStepSkip:input.stepSkippingMask],
         @"metadata":input.metadata,
     }.mutableCopy;
