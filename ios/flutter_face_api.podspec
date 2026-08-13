@@ -13,6 +13,6 @@ A new flutter plugin project.
   s.public_header_files = 'Classes/**/*.h'
   s.dependency 'Flutter'
   s.platform = :ios, '13.0'
-  s.dependency 'FaceSDK', '8.3.4727'
+  s.dependency 'FaceSDK', '8.2.4366'
   s.pod_target_xcconfig = { 'DEFINES_MODULE' => 'YES', 'VALID_ARCHS[sdk=iphonesimulator*]' => 'x86_64' }
 end
