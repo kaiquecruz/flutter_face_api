@@ -8,3 +8,5 @@ test/json
 build/
 
 doc
+# Gradle local cache
+**/.gradle/

@@ -1,19 +1,14 @@
-var useOldXcode = true;
-
-var img1 = useOldXcode
-    ? "iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAAD5Ip3+AAAADElEQVQIHWP4//8/AAX+Av6fyi0TAAAAAElFTkSuQmCC"
-    : "iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAAAXNSR0IArs4c6QAAAIRlWElmTU0AKgAAAAgABQESAAMAAAABAAEAAAEaAAUAAAABAAAASgEbAAUAAAABAAAAUgEoAAMAAAABAAIAAIdpAAQAAAABAAAAWgAAAAAAAABIAAAAAQAAAEgAAAABAAOgAQADAAAAAQABAACgAgAEAAAAAQAAAAGgAwAEAAAAAQAAAAEAAAAAChjw/QAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAxJREFUCB1j+P//PwAF/gL+n8otEwAAAABJRU5ErkJggg==";
-var img2 = useOldXcode
-    ? "iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAAD5Ip3+AAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII="
-    : "iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAIRlWElmTU0AKgAAAAgABQESAAMAAAABAAEAAAEaAAUAAAABAAAASgEbAAUAAAABAAAAUgEoAAMAAAABAAIAAIdpAAQAAAABAAAAWgAAAAAAAABIAAAAAQAAAEgAAAABAAOgAQADAAAAAQABAACgAgAEAAAAAQAAAAGgAwAEAAAAAQAAAAEAAAAAChjw/QAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAtJREFUCB1jYAACAAAFAAGNu5vzAAAAAElFTkSuQmCC";
-var img3 = useOldXcode
-    ? "iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAAD5Ip3+AAAADUlEQVQIHWP4z8BQDwAEgAF/OENMJgAAAABJRU5ErkJggg=="
-    : "iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAIRlWElmTU0AKgAAAAgABQESAAMAAAABAAEAAAEaAAUAAAABAAAASgEbAAUAAAABAAAAUgEoAAMAAAABAAIAAIdpAAQAAAABAAAAWgAAAAAAAABIAAAAAQAAAEgAAAABAAOgAQADAAAAAQABAACgAgAEAAAAAQAAAAGgAwAEAAAAAQAAAAEAAAAAChjw/QAAAAlwSFlzAAALEwAACxMBAJqcGAAAAA1JREFUCB1j+M/AUA8ABIABfzhDTCYAAAAASUVORK5CYII=";
+var img1 =
+    "iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAAAXNSR0IArs4c6QAAAIRlWElmTU0AKgAAAAgABQESAAMAAAABAAEAAAEaAAUAAAABAAAASgEbAAUAAAABAAAAUgEoAAMAAAABAAIAAIdpAAQAAAABAAAAWgAAAAAAAABIAAAAAQAAAEgAAAABAAOgAQADAAAAAQABAACgAgAEAAAAAQAAAAGgAwAEAAAAAQAAAAEAAAAAChjw/QAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAxJREFUCB1j+P//PwAF/gL+n8otEwAAAABJRU5ErkJggg==";
+var img2 =
+    "iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAIRlWElmTU0AKgAAAAgABQESAAMAAAABAAEAAAEaAAUAAAABAAAASgEbAAUAAAABAAAAUgEoAAMAAAABAAIAAIdpAAQAAAABAAAAWgAAAAAAAABIAAAAAQAAAEgAAAABAAOgAQADAAAAAQABAACgAgAEAAAAAQAAAAGgAwAEAAAAAQAAAAEAAAAAChjw/QAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAtJREFUCB1jYAACAAAFAAGNu5vzAAAAAElFTkSuQmCC";
+var img3 =
+    "iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAIRlWElmTU0AKgAAAAgABQESAAMAAAABAAEAAAEaAAUAAAABAAAASgEbAAUAAAABAAAAUgEoAAMAAAABAAIAAIdpAAQAAAABAAAAWgAAAAAAAABIAAAAAQAAAEgAAAABAAOgAQADAAAAAQABAACgAgAEAAAAAQAAAAGgAwAEAAAAAQAAAAEAAAAAChjw/QAAAAlwSFlzAAALEwAACxMBAJqcGAAAAA1JREFUCB1j+M/AUA8ABIABfzhDTCYAAAAASUVORK5CYII=";
 
 var customJson = {"test1": true, "test2": 1, "test3": "test"};
-
 var font1 = {"name": "AppleSDGothicNeo-Thin", "size": 10, "style": 2};
 var font2 = {"name": "Copperplate-Light", "size": 20, "style": 1};
+
 var customizationColors = {
   "100": 0xff000000,
   "101": 0xff000001,
@@ -234,28 +229,6 @@ var livenessConfig = {
   "skipStep": [0, 1],
   "metadata": customJson,
 };
-var enrollmentConfig = {
-  "copyright": true,
-  "cameraSwitchEnabled": false,
-  "closeButtonEnabled": true,
-  "torchButtonEnabled": false,
-  "vibrateOnSteps": true,
-  "cameraPositionAndroid": -1,
-  "cameraPositionIOS": 1,
-  "screenOrientation": [0, 1],
-  "locationTrackingEnabled": true,
-  "preventScreenRecording": false,
-  "attemptsCount": 2,
-  "recordingProcess": 0,
-  "livenessType": 1,
-  "tag": "test",
-  "skipStep": [0, 1],
-  "metadata": customJson,
-  "externalId": "test0",
-  "groupId": "test1",
-  "checkDuplicatesEnabled": true,
-  "duplicatesThreshold": 0.5,
-};
 var verificationConfig = {
   "copyright": true,
   "cameraSwitchEnabled": false,
@@ -274,18 +247,7 @@ var verificationConfig = {
   "skipStep": [0, 1],
   "metadata": customJson,
   "personId": "test0",
-  "groupId": "test1",
   "threshold": 0.5,
-};
-var enrollmentRequest = {
-  "externalId": "test0",
-  "groupId": "test1",
-  "trustedImage": img1,
-};
-var enrollmentRequest2 = {
-  "externalId": "test0",
-  "groupId": "test1",
-  "trustedImageUrl": "test2",
 };
 var livenessBackendException = {
   "code": 200,
@@ -308,23 +270,9 @@ var livenessNotification = {
   "status": 0,
   "response": livenessResponse,
 };
-var errorResponse = {
-  "code": 0,
-  "message": "test0",
-};
-var enrollmentResponse = {
-  "personId": "test0",
-  "externalId": "test1",
-  "error": errorResponse,
-};
-var verifyMatchResponse = {
-  "passed": true,
+var verificationMatchResponse = {
+  "verified": true,
   "similarity": 0.5,
-};
-var verificationResponse = {
-  "passed": true,
-  "match": verifyMatchResponse,
-  "error": errorResponse,
 };
 
 var matchFacesConfig = {
@@ -404,6 +352,9 @@ var person = {
   "id": "test3",
   "metadata": customJson,
   "createdAt": "1969-07-20 20:18:05.000",
+  "externalId": "test4",
+  "ttl": 1,
+  "expireAt": "1969-07-20 20:18:06.000",
 };
 var personGroup = {
   "name": "test1",
@@ -444,6 +395,9 @@ var searchPerson = {
   "id": "test3",
   "metadata": customJson,
   "createdAt": "1969-07-20 20:18:05.000",
+  "externalId": "test4",
+  "ttl": 1,
+  "expireAt": "1969-07-20 20:18:06.000",
 };
 var searchPersonRequest = {
   "imageUpload": imageUpload,
@@ -453,4 +407,42 @@ var searchPersonRequest = {
   "tag": "test",
   "detectAll": true,
   "outputImageParams": outputImageParams,
+};
+var searchPersonFilter = {
+  "groups": ["test1", "test2", "test3"],
+  "threshold": 0.5,
+  "limit": 1,
+  "fieldName": "test0",
+  "fieldValues": ["test4", "test5", "test6"],
+  "exclude": true,
+};
+var enrollmentConfig = {
+  "copyright": true,
+  "cameraSwitchEnabled": false,
+  "closeButtonEnabled": true,
+  "torchButtonEnabled": false,
+  "vibrateOnSteps": true,
+  "cameraPositionAndroid": -1,
+  "cameraPositionIOS": 1,
+  "screenOrientation": [0, 1],
+  "locationTrackingEnabled": true,
+  "preventScreenRecording": false,
+  "attemptsCount": 2,
+  "recordingProcess": 0,
+  "livenessType": 1,
+  "tag": "test",
+  "skipStep": [0, 1],
+  "metadata": customJson,
+  "person": person,
+  "searchFilter": searchPersonFilter,
+};
+var enrollmentResponse = {
+  "enrolled": true,
+  "person": person,
+  "searchPersons": [searchPerson, searchPerson, searchPerson],
+};
+var verificationResponse = {
+  "verified": true,
+  "person": person,
+  "match": verificationMatchResponse,
 };
